@@ -61,7 +61,7 @@ public class CollaboratorController {
 	 * @param collaborator
 	 * @see Collaborator()
 	 */
-	@PostMapping("/ajouterCollaborateur")
+	@PostMapping("/ajouter")
 	public void addCollaborator(@RequestBody Collaborator collaborator) {
 		collaboratorManager.createOrUpdate(collaborator);
 	}
@@ -73,7 +73,7 @@ public class CollaboratorController {
 	 * @param collaborator
 	 * @see Collaborator()
 	 */
-	@DeleteMapping("/supprimerCollaborateur")
+	@DeleteMapping("/supprimer")
 	public void deleteCollaborator(@RequestBody Collaborator collaborator) {
 		collaboratorManager.delete(collaborator);
 	}
